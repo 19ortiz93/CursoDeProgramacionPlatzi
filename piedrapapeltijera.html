@@ -7,7 +7,7 @@
             function aleatorio(min, max) {
                 return Math.floor(Math.random() * ( max - min + 1) + min)
             }
-            //1 es piedra, 2 es papel, e es piedra
+            //1 es piedra, 2 es papel, 3 es tijera
             let jugador = 0
             let pc = aleatorio(1, 3)
             jugador = prompt("Elije: 1 para piedra, 2 para papel, 3 para tijera")
@@ -37,7 +37,7 @@
                 alert("Ganaste!!!")
             } else if(jugador ==3 && pc == 2) {
                 alert("Ganaste!!!")
-            }else {
+            } else {
                 alert("Perdiste!!!")
             }
         </script>
