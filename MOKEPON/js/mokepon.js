@@ -70,6 +70,17 @@ function ataqueAleatorioEnemigo() {
     } else {
         ataqueEnemigo = 'TIERRA'
     }
+
+    crearMensaje()
+}
+
+function crearMensaje() {
+    let sectionMensajes = document.getElementById('mensaje')
+
+    let parrafo = document.createElement('p')
+    parrafo.innerHTML = 'Tu mascota atacó con ' + ataqueJugador + ', La mascota del enemigo atacó con '+ ataqueEnemigo + ' - PENDIENTE'
+
+    sectionMensajes.appendChild(parrafo)
 }
 
 function aleatorio(min, max) {
